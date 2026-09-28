@@ -1,0 +1,152 @@
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f7fb; /* cinza bem claro */
+  color: #2c3e50;
+  line-height: 1.5;
+}
+
+/* ===== CABEÇALHO ===== */
+.cabecalho {
+  background-color: #1e5aa8; /* azul principal */
+  color: #ffffff;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+.cabecalho h1 {
+  font-size: 1.8rem;
+}
+
+.subtitulo {
+  font-size: 1rem;
+  margin-top: 4px;
+  opacity: 0.9;
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.conteudo {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 16px 40px;
+}
+
+/* ===== CARDS DE RESUMO ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-left: 6px solid #1e5aa8; /* borda azul */
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+  font-size: 0.85rem;
+  color: #6b7c93;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.valor-card {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1e5aa8;
+}
+
+/* Card de frequência usa verde suave (cor secundária) */
+.card:last-child {
+  border-left-color: #5cb85c;
+}
+
+.card:last-child .valor-card {
+  color: #3d8b3d;
+}
+
+.texto-frequencia {
+  display: block;
+  font-size: 0.8rem;
+  color: #5cb85c;
+  margin-top: 4px;
+}
+
+/* ===== TABELA ===== */
+.tabela-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  overflow-x: auto; /* permite rolar no celular */
+}
+
+.tabela-boletim {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px; /* garante que não fique apertada demais */
+}
+
+.tabela-boletim th,
+.tabela-boletim td {
+  padding: 10px 12px;
+  text-align: center;
+  border-bottom: 1px solid #e6ecf3;
+  font-size: 0.9rem;
+}
+
+.tabela-boletim th {
+  background-color: #eaf1fa;
+  color: #1e5aa8;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.tabela-boletim td:first-child {
+  text-align: left;
+  font-weight: 600;
+}
+
+/* Cores das situações */
+.situacao-bom {
+  color: #3d8b3d;
+  font-weight: bold;
+}
+
+.situacao-atencao {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.situacao-sem-nota {
+  color: #8a99ab;
+  font-style: italic;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 600px) {
+  .cabecalho h1 {
+    font-size: 1.5rem;
+  }
+
+  .valor-card {
+    font-size: 1.3rem;
+  }
+
+  .tabela-boletim th,
+  .tabela-boletim td {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+}
