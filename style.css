@@ -37,6 +37,175 @@ body {
   padding: 20px 16px 40px;
 }
 
+/* ===== TELA DE LOGIN / ACESSO ===== */
+.card-login {
+  background-color: #ffffff;
+  border-top: 5px solid #1e5aa8;
+  border-radius: 10px;
+  padding: 24px;
+  max-width: 420px;
+  margin: 20px auto 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.card-login h2 {
+  font-size: 1.2rem;
+  color: #1e5aa8;
+  margin-bottom: 16px;
+}
+
+.info-aluno-fixa {
+  display: flex;
+  justify-content: space-around;
+  background-color: #eaf1fa;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.campo-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.campo-login label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #6b7c93;
+}
+
+.campo-login input {
+  width: 100%;
+  max-width: 240px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.campo-login button,
+.acoes-boletim button,
+.botoes-edicao button {
+  background-color: #1e5aa8;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.campo-login button:hover,
+.acoes-boletim button:hover,
+.botoes-edicao button[type="submit"]:hover {
+  background-color: #15427d;
+}
+
+/* ===== AÇÕES E EDIÇÃO ===== */
+.acoes-boletim {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.card-edicao {
+  background-color: #ffffff;
+  border-left: 6px solid #1e5aa8;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card-edicao h2 {
+  font-size: 1.1rem;
+  color: #1e5aa8;
+  margin-bottom: 16px;
+}
+
+.grid-edicao-item {
+  background-color: #f8fafc;
+  border: 1px solid #e6ecf3;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.grid-edicao-item h4 {
+  font-size: 0.95rem;
+  color: #1e5aa8;
+  margin-bottom: 10px;
+}
+
+.campos-notas-faltas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 10px;
+}
+
+.campo-grupo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo-grupo label {
+  font-size: 0.75rem;
+  color: #6b7c93;
+  margin-bottom: 4px;
+}
+
+.campo-grupo input {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.campo-grupo input.campo-invalido {
+  border-color: #c0392b;
+  background-color: #fdf0ed;
+}
+
+.botoes-edicao {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.botoes-edicao button[type="button"] {
+  background-color: #8a99ab;
+}
+
+.botoes-edicao button[type="button"]:hover {
+  background-color: #6c7a89;
+}
+
+.mensagem-status {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.mensagem-status.erro {
+  color: #c0392b;
+}
+
+.mensagem-status.sucesso {
+  color: #3d8b3d;
+}
+
+.mensagem-status.info {
+  color: #1e5aa8;
+}
+
 /* ===== CARDS DE RESUMO ===== */
 .cards {
   display: grid;
